@@ -1,9 +1,12 @@
 import subprocess, sys, os, re, shlex, json, csv, os.path, time
-print ('Handbrake batch file creator V2 - T.Barnard 2020')
+print ('Handbrake batch file creator V3 4K - T.Barnard 2023')
 
 def Handbrake_batch_maker_list (input_file_list, input_path, output_path, script_name,x265, run_compress):
+
+  # Encoder Setting Constants
   
-  #store value of x265 so it can be set back if adjusted
+  
+  # Store value of x265 so it can be set back if adjusted
   stored_x265 = x265
   # Check if output path exists
   if os.path.isdir(str(output_path)):
